@@ -1,5 +1,6 @@
 import React from "react"
 
+
 const ThirdQuestion = (props) => {
     const {
         pineappleInput,
@@ -10,13 +11,11 @@ const ThirdQuestion = (props) => {
   
     return (
         <div className="question-wrapper">
-
             <label className="page-title" htmlFor="moodInput">
                 Alright, now let's get serious. Pineapple in a pizza, yes or no?
             </label>
 
             <div className="radio-input-wrapper">
-
                 <div className="radio-button-container">
                     <label htmlFor="Yes">
                         <span role="img"
@@ -57,10 +56,8 @@ const ThirdQuestion = (props) => {
                 <button onClick={onSectionChangeBackward}>Back</button>
                 <button onClick={onSectionChangeForward}>Next</button>
             </div>
-
         </div>
     )
 }
-
 
 export default ThirdQuestion

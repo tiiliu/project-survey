@@ -1,10 +1,10 @@
 import React from "react"
 
+
 const FirstQuestion = ({ nameInput, onNameInputChange, onSectionChangeForward }) => {
 
     return (
         <div className="question-wrapper">
-
             <label className="page-title" htmlFor="nameInput">
                 Hey friend, what's your name?
             </label>
@@ -16,7 +16,7 @@ const FirstQuestion = ({ nameInput, onNameInputChange, onSectionChangeForward })
                 value={nameInput}
                 onChange={onNameInputChange}
             />
-
+            
             <button onClick={onSectionChangeForward}>Next</button>
         </div>
     )

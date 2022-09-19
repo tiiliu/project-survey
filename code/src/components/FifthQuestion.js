@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 
-const rangeLength = { min: 0, max: 5 }
+const rangeLength = { min: 0, max: 6 }
+
 
 const FifthQuestion = (props) => {
     const {
@@ -24,13 +25,11 @@ const FifthQuestion = (props) => {
 
     return (
         <div className="question-wrapper range-slider-page">
-
             <label className="page-title" htmlFor="emojiInput">
-                How excited are you to answer this survey?
+                How are you feeling right now?
             </label>
             
             <div className="range-slider-container">
-               
                 <div className="slider-bubble">
                     <span>
                     {emojiMood}                       
@@ -42,19 +41,17 @@ const FifthQuestion = (props) => {
                     type="range"
                     className="range"
                     min="0"
-                    max="5"
+                    max="6"
                     step="1"
                     value={emojiInput}
                     onChange={onEmojiInputChange}
                 />
-
             </div>           
 
             <div className="button-wrapper">
                 <button onClick={onSectionChangeBackward}>Back</button>
                 <button onClick={onSectionChangeForward}>Results</button>
             </div>
-           
         </div>
     )
 }
